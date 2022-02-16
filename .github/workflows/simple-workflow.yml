@@ -1,5 +1,7 @@
 name: sample
-on: workflow_dispatch  
+on: 
+  workflow_dispatch:
+  repository_dispatch:
 jobs:
   job1:
     name: first job
