@@ -1,5 +1,7 @@
 name: sample
-on: push
+on:
+  repository_dispatch:
+    types: [example-workflow]
 jobs:
   job1:
     name: first job
