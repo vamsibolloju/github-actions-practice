@@ -3,11 +3,11 @@ on:
   workflow_dispatch:
   repository_dispatch:
 env:
-  REPOSITORY: ${{env.GITHUB_REPOSITORY}}
+  sample_name: sample_value
 jobs:
   job1:
     name: first job
     runs-on: ubuntu-latest
     steps:
     - name: step 1
-      run: echo "${{REPOSITORY}}"
+      run: echo "${{sample_name}}"
