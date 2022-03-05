@@ -1,9 +1,12 @@
 name: sample
+
 on: 
   workflow_dispatch:
   repository_dispatch:
+  
 env:
   sample_name: sample_value
+
 jobs:
   job1:
     name: first job
