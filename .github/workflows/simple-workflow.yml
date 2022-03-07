@@ -5,8 +5,7 @@ on:
   repository_dispatch:
   
 env:
-  sample_name: sample_value
-  repo: ${{ env.GITHUB_REPOSITORY }}
+  sample_name: sample_value  
 
 jobs:
   job1:
@@ -14,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: step 1
-      run: echo "$repo"
+      run: echo "$GITHUB_REPOSITORY"
