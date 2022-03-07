@@ -6,6 +6,7 @@ on:
   
 env:
   sample_name: sample_value
+  repo: ${{ env.GITHUB_REPOSITORY }}
 
 jobs:
   job1:
@@ -13,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: step 1
-      run: env
+      run: echo "$repo"
