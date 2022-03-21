@@ -13,4 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: step 1
-      run: echo "$REPOSITORY"
+      run: |
+        echo "$REPOSITORY"
+        echo "$sample_name"
