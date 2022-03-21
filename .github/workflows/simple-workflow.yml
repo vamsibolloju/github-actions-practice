@@ -14,5 +14,5 @@ jobs:
     steps:
     - name: step 1
       run: |
-        echo "$REPOSITORY"
+        echo "$GITHUB_REPOSITORY"
         echo "$sample_name"
