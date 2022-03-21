@@ -14,5 +14,5 @@ jobs:
     steps:
     - name: step 1
       run: |
-        echo "$GITHUB_REPOSITORY"
+        echo "${{ github.repository }}"
         echo "$sample_name"
